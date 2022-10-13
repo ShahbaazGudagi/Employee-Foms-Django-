@@ -1,0 +1,11 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<div class="mb-2 d-flex justify-content-between align-items-center">
+<form action="{% url 'Addmployee' %}" method="post">
+    {% csrf_token %}
+    <h3>Employee Form</h3>
+    <div class="form-group">
+        <table> 
+            {{form.as_table}}
+        </table>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
