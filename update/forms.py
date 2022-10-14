@@ -1,7 +1,7 @@
-from django import forms 
+from django.forms import ModelForm
 from .models import *
 
-class EmployeeForms(forms.ModelForm):
+class EmployeeForms(ModelForm):
     class Meta:
         model=AddEmployee
         fields='__all__'
